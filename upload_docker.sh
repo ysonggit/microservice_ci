@@ -11,7 +11,7 @@ dockerpath=ysongdocker/mlapp
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login
-docker tag mlapi20200920
+docker tag mlapi20200920 $dockerpath
 
 # Step 3:
 # Push image to a docker repository
