@@ -19,7 +19,6 @@ kubectl get pods
 # Step 4:
 # Forward the container port to a host
 kubectl port-forward mlapi20200920 8000:80
-
-# Run in Docker Hub container with kubernetes
-
+# Log container outputs
+kubectl logs --follow mlapi20200920
 

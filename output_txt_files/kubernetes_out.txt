@@ -1,5 +1,25 @@
 NAME            READY   STATUS    RESTARTS   AGE
-mlapi20200920   1/1     Running   0          4m37s
+mlapi20200920   1/1     Running   0          19s
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
+^C * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 334-935-782
+[2020-09-20 10:03:51,119] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2020-09-20 10:03:51,136] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-09-20 10:03:51,148] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-09-20 10:03:51,154] INFO in app: Prediction value: 
+[20.35373177134412]
+127.0.0.1 - - [20/Sep/2020 10:03:51] "POST /predict HTTP/1.1" 200 -
